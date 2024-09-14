@@ -14,7 +14,7 @@ app.use(express.json());
 app.use('/api', guestRoutes);
 
 mongoose.connect(mongoUri)
-  .then(() => console.log('Connected to MongoDB'))
+  .then(() => console.log('Connected to MongoDb'))
   .catch(err => console.error('Failed to connect to MongoDB', err));
 
 app.listen(port, () => {

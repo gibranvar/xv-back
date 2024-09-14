@@ -15,7 +15,7 @@ app.use((0, cors_1.default)());
 app.use(express_1.default.json());
 app.use('/api', guestRoutes_1.default);
 mongoose_1.default.connect(mongoUri)
-    .then(() => console.log('Connected to MongoDB'))
+    .then(() => console.log('Connected to MongoDb'))
     .catch(err => console.error('Failed to connect to MongoDB', err));
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
